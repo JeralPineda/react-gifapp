@@ -13,6 +13,8 @@ export const AddCategory = ({ setCategories }) => {
       //    Prevenimos que recargue
       e.preventDefault();
 
+      console.log('handleSubmit', inputValue);
+
       if (inputValue.trim().length > 2) {
          setCategories((cats) => [inputValue, ...cats]);
          setInputValue('');
